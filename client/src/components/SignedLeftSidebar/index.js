@@ -277,6 +277,7 @@ export default function SignedLeftSidebar(props) {
           <div
             className="left-sidebar-control-icons"
             onClick={toggleShowSearch}
+            id="search"
           >
             <RiSearchLine />
           </div>
@@ -357,6 +358,7 @@ export default function SignedLeftSidebar(props) {
           }}
         >
           <MenuItem
+            id="create-community"
             onClick={() => {
               fetchOrganizations();
               setStartCreateCommunity(true);
@@ -367,6 +369,7 @@ export default function SignedLeftSidebar(props) {
             Create Community
           </MenuItem>
           <MenuItem
+            id="create-channel"
             onClick={() => {
               fetchOrganizations();
               setStartCreateChannel(true);
